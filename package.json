@@ -1,0 +1,16 @@
+{
+  "name": "tariff-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "协定税则网站的适用范围与跨版编码采集",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test --test-concurrency=1",
+    "demo": "node scripts/demo.mjs",
+    "start": "node scripts/start.mjs"
+  }
+}

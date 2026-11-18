@@ -1,0 +1,59 @@
+{
+  "scope": "CN",
+  "resources": {
+    "/tax/CN/R2": {
+      "body": {
+        "edition": "R2",
+        "tariffs": [
+          {
+            "id": "H-881",
+            "href": "/tax/CN/R2/records/H-881"
+          }
+        ]
+      }
+    },
+    "/tax/CN/R2/records/H-881": {
+      "body": {
+        "code": "H-881",
+        "edition": "R2",
+        "rate": "4.5",
+        "unit": "percent",
+        "country": "CN",
+        "description": "普通设备",
+        "chapter": "88"
+      }
+    },
+    "/tax/CN/R2/relations/H-881": {
+      "body": {
+        "crosswalk": [
+          {
+            "from": "H-88",
+            "to": [
+              "H-881",
+              "H-882"
+            ],
+            "edition": "R2"
+          }
+        ],
+        "exclusions": [
+          "H-882"
+        ]
+      }
+    }
+  },
+  "portal": {
+    "identity": "code",
+    "records": {
+      "H-881": {
+        "code": "H-881",
+        "edition": "R2",
+        "rate": "4.5",
+        "unit": "percent",
+        "country": "CN",
+        "description": "普通设备",
+        "chapter": "88"
+      }
+    },
+    "version": 1
+  }
+}
