@@ -1,5 +1,6 @@
 {
   "scope": "CN",
+  "procurement": ["H-88"],
   "resources": {
     "/tax/CN/R2": {
       "body": {
@@ -7,7 +8,14 @@
         "tariffs": [
           {
             "id": "H-881",
-            "href": "/tax/CN/R2/records/H-881"
+            "href": "/tax/CN/R2/records/H-881",
+            "relations": "/tax/CN/R2/relations/H-881"
+          }
+        ],
+        "chapters": [
+          {
+            "id": "88",
+            "href": "/tax/CN/R2/chapters/88"
           }
         ]
       }
@@ -33,8 +41,23 @@
               "H-882"
             ],
             "edition": "R2"
+          },
+          {
+            "from": "H-88",
+            "to": [
+              "H-881",
+              "H-883"
+            ],
+            "edition": "R3"
           }
-        ],
+        ]
+      }
+    },
+    "/tax/CN/R2/chapters/88": {
+      "body": {
+        "chapter": "88",
+        "edition": "R2",
+        "notes": "第88章章注：本版税目不包括特种设备。",
         "exclusions": [
           "H-882"
         ]
